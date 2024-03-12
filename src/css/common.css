@@ -1,0 +1,53 @@
+body {
+  font-family: 'Inter Tight', sans-serif;
+  background-color: var(--background);
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding-top: 82px;
+    padding-bottom: 82px;
+  }
+
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1280px;
+  }
+}

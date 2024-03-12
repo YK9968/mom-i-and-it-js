@@ -1,4 +1,6 @@
 @import url('./reset.css');
+@import url('./variables.css');
+@import url('./common.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about_me.css');

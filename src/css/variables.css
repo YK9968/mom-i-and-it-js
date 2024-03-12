@@ -1,0 +1,9 @@
+:root {
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+  --button-color: #ed3b44;
+  --button-hover: #e0373f;
+  --main-text: #fafafa;
+  --minor-text: rgba(250, 250, 250, 0.6);
+}
