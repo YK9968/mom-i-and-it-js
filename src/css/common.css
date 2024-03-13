@@ -22,6 +22,24 @@ body {
   overflow: hidden;
 }
 
+.section-title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
+}
+.hidden {
+  display: none;
+}
+
+.disabled {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  stroke: #3b3b3b;
+}
+
 @media screen and (min-width: 320px) {
   .container {
     margin-left: auto;
@@ -45,7 +63,7 @@ body {
     max-width: 375px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .section {
     padding-top: 48px;
     padding-bottom: 48px;
@@ -58,7 +76,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .section {
     padding-top: 82px;
     padding-bottom: 82px;
@@ -67,6 +85,6 @@ body {
   .container {
     padding-left: 32px;
     padding-right: 32px;
-    max-width: 1280px;
+    max-width: 1440px;
   }
 }
