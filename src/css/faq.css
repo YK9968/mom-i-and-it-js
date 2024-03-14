@@ -1,24 +1,8 @@
 /* ======================= mobile ======================= */
-.section {
-  margin: 0 auto;
-}
-
-.faq-title {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: rgb(250, 250, 250, 0.4);
-  padding-bottom: 32px;
-}
 
 .faq-item-container {
   padding: 20px 0;
-  border-top: 2px solid #333;
-}
-
-.faq-item-container:last-child {
-  border-bottom: 2px solid #333;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .faq-top-item {
@@ -33,7 +17,7 @@
   font-size: 20px;
   line-height: 150%;
   letter-spacing: -0.02em;
-  color: #fafafa;
+  color: var(--main-text);
 }
 
 .accordeon-button {
@@ -49,11 +33,16 @@
   border: 1px solid rgb(250, 250, 250, 0.2);
 }
 
-.faq-arrow-img {
-  /* animation: rotate 0.5s linear infinite; */
+/* ========= animation ========= */
+.close-img {
+  animation: close 0.5s linear infinite;
 }
 
-@keyframes rotate {
+.open-img {
+  animation: open 0.5s linear infinite;
+}
+
+@keyframes close {
   from {
     transform: rotate(0deg);
   }
@@ -61,6 +50,17 @@
     transform: rotate(180deg);
   }
 }
+
+@keyframes open {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+/* ========= /animation ========= */
 
 .faq-suptitle {
   font-weight: 500;
@@ -72,7 +72,7 @@
 
 /* ======================= tablet ======================= */
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) and (max-width: 1439px) {
   .faq-item-container {
     padding-top: 32px;
     padding-bottom: 24px;
@@ -89,7 +89,7 @@
 
 /* ======================= desctop ======================= */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
   .faq-column {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -98,18 +98,18 @@
   /* nth-child */
 
   .faq-item-container:nth-child(1) {
-    border-right: 2px solid #333;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
     padding-right: 32px;
   }
 
   .faq-item-container:nth-child(5) {
-    border-right: 2px solid #333;
-    border-bottom: 2px solid #333;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     padding-right: 32px;
   }
 
   .faq-item-container:nth-child(3) {
-    border-right: 2px solid #333;
+    border-right: 1px solid rgba(250, 250, 250, 0.2);
     padding-right: 32px;
   }
 
@@ -119,6 +119,7 @@
 
   .faq-item-container:nth-child(6) {
     padding-left: 32px;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 
   .faq-item-container:nth-child(2) {
