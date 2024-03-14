@@ -1,0 +1,131 @@
+/* ======================= mobile ======================= */
+.section {
+  margin: 0 auto;
+}
+
+.faq-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgb(250, 250, 250, 0.4);
+  padding-bottom: 32px;
+}
+
+.faq-item-container {
+  padding: 20px 0;
+  border-top: 2px solid #333;
+}
+
+.faq-item-container:last-child {
+  border-bottom: 2px solid #333;
+}
+
+.faq-top-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 16px;
+}
+
+.faq-subtitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.faq-arrow-img {
+  width: 40px;
+  height: 40px;
+  margin-left: 44px;
+  padding: 10px;
+  color: #fafafa;
+  border-radius: 50%;
+  border: 1px solid rgb(250, 250, 250, 0.2);
+  animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+.faq-suptitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgb(250, 250, 250, 0.6);
+}
+
+/* ======================= tablet ======================= */
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .faq-item-container {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .faq-top-item {
+    padding-bottom: 26px;
+  }
+
+  .faq-arrow-img {
+    margin-left: 90px;
+  }
+
+  .faq-suptitle {
+    padding-right: 48px;
+  }
+}
+
+/* ======================= desctop ======================= */
+
+@media screen and (min-width: 1280px) {
+  .faq-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* nth-child */
+
+  .faq-item-container:nth-child(1) {
+    border-right: 2px solid #333;
+    padding-right: 32px;
+  }
+
+  .faq-item-container:nth-child(5) {
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding-right: 32px;
+  }
+
+  .faq-item-container:nth-child(3) {
+    border-right: 2px solid #333;
+    padding-right: 32px;
+  }
+
+  .faq-item-container:nth-child(4) {
+    padding-left: 32px;
+  }
+
+  .faq-item-container:nth-child(6) {
+    padding-left: 32px;
+  }
+
+  .faq-item-container:nth-child(2) {
+    padding-left: 32px;
+  }
+
+  /* /nth-child */
+
+  .faq-suptitle {
+    padding-right: 48px;
+  }
+}
