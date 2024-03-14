@@ -1,17 +1,22 @@
+
 <section class="worktogether">
-    <div class="worktogether-title">
-        <img class="worktogether-icon"
-            src="../img/svg/icons.svg#icon-user" 
-            alt="icon-user"
-        >
-        <h2 class="worktogether-subtitle">LET'S
-            <span class="worktogether-span">WORK</span>
-            TOGETHER
-        </h2>
-    </div>
+<div class="container">
+    <h2 class="worktogether-title">
+        <span>
+            <img class="worktogether-icon"
+                src="./img/mobile/work-together-logo-mobile.jpg"
+                alt="lloydjefferson"
+                width="44"
+                height="44"
+            >
+        </span>let's
+        <span class="worktogether-span">work</span>
+            together
+    </h2>
     
-    <div class="worktogether-form-wrapper">
-        <form class="worktogether-form">
+    
+    <form class="worktogether-form">
+        <div class="worktogether-form-wrapper">
             <input class="worktogether-form-email"
                 type="email"
                 name="email"
@@ -19,27 +24,28 @@
                 placeholder="clients@gmail.com"
                 pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
             >
-            <p class="worktogether-form-check">Succes !</p>
-            <p class="worktogether-form-check">Invalid email, try again !!!</p>
-            <textarea  class="worktogether-form-comments"
-                name="user-comment"
-                placeholder="comments">
-            </textarea>
-            <button class="worktogether-form-button"
-                type="submit"
-            >Send</button>
-        </form>
-    </div>
+            <p class="worktogether-form-check true">Succes !</p>
+            <p class="worktogether-form-check false">Invalid email, try again !!!</p>
+        </div>
+        <textarea  class="worktogether-form-comments"
+            name="user-comment"
+            placeholder="comments"></textarea>
+        <button class="worktogether-form-button"
+            type="submit"
+        >Send</button>
+    </form>
+    
     <div class="worktogether-address">
         <ul class="worktogether-address-list">
             <li class="worktogether-address-item">
                 <a class="worktogether-address-link" 
-                    href="">lloydjefferson@gmail.com</a>
+                    href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
             </li>
             <li class="worktogether-address-item">
                 <a class="worktogether-address-link" 
-                    href="">+380 11 1111 11 11</a>
+                    href="tel:+3801111111111">+380 11 1111 11 11</a>
             </li>
         </ul>
     </div>
+</div>
 </section>
