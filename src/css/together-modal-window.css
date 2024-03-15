@@ -75,6 +75,7 @@
 }
 /* DESKTOP */
 @media screen and (min-width: 1440px) {
+
   .modal-close-btn {
     cursor: pointer;
   }
