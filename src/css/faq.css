@@ -9,16 +9,12 @@
   margin-top: 0;
 }
 
-.faq-item-container {
-  padding: 20px 0;
-  border-top: 1px solid rgba(250, 250, 250, 0.2);
-}
-
 .faq-top-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .faq-subtitle {
@@ -31,7 +27,6 @@
 
 .faq-column > .ac .ac-trigger {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 45px;
   height: 45px;
@@ -82,10 +77,10 @@
   .faq-column {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .faq-item-container {
+    align-items: center;
     width: calc(50% - 0px);
   }
 
