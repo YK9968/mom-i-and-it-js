@@ -1,3 +1,16 @@
+
+.worktogether {
+    background-image: url(../img/mobile/worktogether-bg-mobil.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.worktogether-icon-wrapper {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 4px;
+}
+
 .worktogether-title {
     font-weight: 500;
     font-size: 40px;
@@ -5,26 +18,24 @@
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: var(--main-text);
-    margin-bottom: 63px;
-    margin-top: 32px;
-}
-.worktogether-icon-span {
-    margin-right: 8px;
 }
 
 .worktogether-icon {
-    display: inline-block;
     border-radius: 12px;
     width: 44px;
     height: 44px;
 }
+
 .worktogether-text-span {
     color: var(--button-color);
 }
+
 .worktogether-form {
     display: flex;
     flex-direction: column;
+    margin-top: 63px;
 }
+
 .worktogether-form-email {
     font-weight: 500;
     font-size: 16px;
@@ -41,6 +52,7 @@
     border-right: none;
     border-color: var(--minor-text);
 }
+
 .worktogether-form-check {
     font-weight: 500;
     font-size: 14px;
@@ -48,12 +60,15 @@
     letter-spacing: -0.02em;
     margin-top: 4px;
 }
+
 .true {
     color: #3CBC81;
 }
+
 .false {
     color: var(--button-color);
 }
+
 .worktogether-form-comments {
     font-family: var(--font-family);
     font-weight: 500;
@@ -73,6 +88,7 @@
     border-right: none;
     border-color: var(--minor-text);
 }
+
 .worktogether-form-button {
     width: 100px;
     height: 100px;
@@ -85,12 +101,13 @@
     letter-spacing: -0.02em;
     color: var(--main-text);
 }
+
 .worktogether-address-list {
     display: flex;
     gap: 4px;
     margin-top: 64px;
-    /* margin-bottom: 32px; */
 }
+
 .worktogether-address-link {
     display: block;
     outline: 1px solid rgba(250, 250, 250, 0.2);
@@ -101,66 +118,115 @@
     letter-spacing: -0.02em;
     color: var(--main-text);
 }
-/* ================================= tablet ================ */
-@media screen and (min-width: 768px) {
-.worktogether-title {
-    font-size: 64px;
-    width: 540px;
-    margin-bottom: 18px;
-    margin-top: 85px;
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .worktogether {
+    background-image: url(../img/mobile/worktogether-bg-mobil@2x.png);
+  }
 }
 
-.worktogether-icon-span {
-    margin-right: 20px;
+/* ================================= tablet ================ */
+@media screen and (min-width: 768px) {
+
+.worktogether {
+    background-image: url(../img/tablet/worktogether-bg-tablet.png);
+}
+
+.worktogether-icon-wrapper {
+    gap: 20px;
+    margin-bottom: 7px;
+}
+
+.padding {
+    padding-top: 3px;
+}
+
+.worktogether-title {
+    font-size: 64px;
+   
 }
 
 .worktogether-icon {
     width: 70px;
     height: 70px;
 }
+
 .worktogether-form {
     flex-direction: row;
     gap: 32px;
+    margin-top: 18px;
 }
+
 .worktogether-form-email {
     width: 245px;
     margin-top: 46px;
 }
+
 .worktogether-form-comments {
     width: 245px;
     margin-top: 46px;
+    margin-bottom: 0;
 }
+
 .worktogether-form-button {
     width: 150px;
     height: 150px;
 }
+
 .worktogether-address-list {
     margin-top: 18px;
-    margin-bottom: 87px;
+    margin-bottom: 121px;
     gap: 8px;
 }
+
 .worktogether-address-link {
     padding: 18px 32px;
     font-size: 16px;
 }
+
 }
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  .worktogether {
+    background-image: url(../img/tablet/worktogether-bg-tablet@2x.png);
+  }
+}
+
 /* ================================= desktop ==================== */
 
 @media screen and (min-width: 1440px) {
 
 .worktogether {
+    background-image: url(../img/desktop/worktogether-bg-desktop.png);
+}
+
+.worktogether {
     padding-left: 164px;
 }
 
-.worktogether-title {
-    margin-top: 88px;
-}
 .worktogether-form-email {
     width: 390px;
 }
+
 .worktogether-form-comments {
     width: 390px;
     margin-right: 54px;
 }
 
+.worktogether-address-list {
+    margin-bottom: 87px;
+}
+
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+  screen and (min-resolution: 2dppx) and (min-width: 1440px),
+  screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+  .worktogether {
+    background-image: url(../img/desktop/worktogether-bg-desktop@2x.png);
+  }
 }
