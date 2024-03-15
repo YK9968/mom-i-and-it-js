@@ -8,6 +8,7 @@
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* display: none; */
 }
 
 .modal {
@@ -22,11 +23,11 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 72px 16px 24px 16px;
+  padding: 64px 32px;
+  /* display: none; */
 }
 
 .modal-text {
-  font: Inter Tight;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -37,7 +38,6 @@
   text-align: center;
 }
 .modal-comment {
-  font: Inter Tight;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -56,14 +56,14 @@
   line-height: 0;
   padding: 0;
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 20px;
+  right: 20px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* TABLET */
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) {
   .modal {
     width: 492px;
     height: 246px;
@@ -75,14 +75,7 @@
 }
 /* DESKTOP */
 @media screen and (min-width: 1440px) {
-  .modal {
-    width: 492px;
-    height: 246px;
-    padding: 64px;
-  }
-  .modal-comment {
-    text-align: center;
-  }
+
   .modal-close-btn {
     cursor: pointer;
   }
