@@ -91,9 +91,9 @@
   }
   .benefits-wrap {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* align-items: flex-start; */
     gap: 461px;
   }
   .benefits-list {
