@@ -1,0 +1,41 @@
+.hero {
+  position: relative;
+  background-image: url(../img/mobile/hero_mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-title {
+  color: var(--main-text);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1;
+  padding-top: 281px;
+  margin-bottom: 212px;
+}
+
+.hero-list {
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.hero-button {
+  background-color: transparent;
+  color: var(--main-text);
+  font-size: 14px;
+  line-height: auto;
+  border: 1px solid rgb(179, 174, 174);
+  border-radius: 50%;
+  max-width: 37px;
+  max-height: 37px;
+  padding: 10px 12px;
+}
+
+.button-email {
+  border-radius: 20px;
+  min-width: 178px;
+  height: 37px;
+}
