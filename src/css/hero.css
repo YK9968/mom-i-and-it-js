@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: url(../img/mobile/hero_mobile.png);
+  background-image: url(./img/mobile/hero_mobile.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,16 +52,16 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../img/tablet/hero_tablet.png);
+    background-image: url(./img/tablet/hero_tablet.png);
   }
 
   .hero-title {
     font-size: 90px;
     padding-top: 300px;
     margin-bottom: 187px;
-    max-width: 632px;
+    min-width: 632px;
   }
 
   .hero-list {
@@ -87,12 +87,11 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    background-image: url(../img/desktop/hero_desktop.png);
+    background-image: url(./img/desktop/hero_desktop.png);
   }
 
   .hero-title {
-    font-size: 90px;
-    padding-top: 300px;
+    padding-left: 162px;
     margin-bottom: 243px;
     min-width: 1084px;
   }
