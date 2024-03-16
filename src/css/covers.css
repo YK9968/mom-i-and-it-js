@@ -1,0 +1,108 @@
+.covers {
+  max-width: 375px;
+  height: 508px;
+  background-image: url(../img/mobile/covers-bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 0;
+  margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx),
+  screen and (min-device-pixel-ratio: 2) {
+  .covers {
+    background-image: url(../img/mobile/covers-bg-mobile@2x.png);
+  }
+}
+.covers-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 508px;
+}
+.covers-marquee {
+  position: absolute;
+  transform: rotate(16deg);
+}
+
+.covers-marquee-inner {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+.covers-marquee-inner:not(:last-child) {
+  margin-bottom: 24px;
+}
+.covers-marquee-line {
+  max-width: none;
+  width: 282px;
+  height: 162px;
+}
+
+.covers-marquee-line {
+  animation-name: marqueeLine;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(360%);
+  }
+
+  to {
+    transform: translateX(-360%);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .covers {
+    max-width: 768px;
+    height: 960px;
+    background-image: url(../img/tablet/covers-bg-tablet.png);
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .covers {
+      background-image: url(../img/tablet/covers-bg-tablet@2x.png);
+    }
+  }
+  .covers-content {
+    height: 960px;
+  }
+  .covers-marquee-inner {
+    gap: 48px;
+  }
+  .covers-marquee-inner:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  .covers-marquee-line {
+    width: 544px;
+    height: 314px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .covers {
+    max-width: 1440px;
+
+    background-image: url(../img/desktop/covers-bg-desktop.png);
+  }
+
+  @media screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx),
+    screen and (min-device-pixel-ratio: 2) {
+    .covers {
+      background-image: url(../img/desktop/covers-bg-desktop@2x.png);
+    }
+  }
+}
