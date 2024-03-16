@@ -9,7 +9,7 @@
     <script type="module" crossorigin src="/mom-i-and-it-js/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/mom-i-and-it-js/assets/vendor-8f98089f.js">
     <link rel="stylesheet" href="/mom-i-and-it-js/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/mom-i-and-it-js/assets/index-5c7d4c3e.css">
+    <link rel="stylesheet" href="/mom-i-and-it-js/assets/index-ed9544e2.css">
   </head>
   <body>
     <header><header class="header-section section">
@@ -437,15 +437,15 @@
 </section>
 
       <section class="covers section">
-  <div class="container">
-    <h2>Covers</h2>
-    <div class="content">
-      <div class="marquee">
+  <div class="covers-bg">
+    <div class="container covers-content">
+      <h2 class="visually-hidden">Covers</h2>
+      <div class="covers-marquee">
         <!-- First row -->
-        <ul class="marquee__inner">
+        <ul class="covers-marquee-inner">
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/first-screen-1.jpg.jpg"
@@ -454,7 +454,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-4-37e7b7ff.jpg 834w, /mom-i-and-it-js/assets/rectangle-4@2x-2485cf3c.jpg 1668w"
               sizes=" (min-width: 320px) 834px "
               src="./img/desktop/rectangle-4.jpg "
@@ -463,7 +463,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-5-3c99fabe.jpg 830w, /mom-i-and-it-js/assets/rectangle-5@2x-4ae4ee3e.jpg 1668w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-5.jpg "
@@ -472,7 +472,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-6-3f7f34d8.jpg 830w, /mom-i-and-it-js/assets/rectangle-6@2x-4f9ede5f.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-6.jpg "
@@ -481,7 +481,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-7-b8ef22f2.jpg 830w, /mom-i-and-it-js/assets/rectangle-7@2x-b7c901f2.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-7.jpg "
@@ -490,7 +490,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-8-cadf2c0c.jpg 830w, /mom-i-and-it-js/assets/rectangle-8@2x-aff37560.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-8.jpg "
@@ -499,7 +499,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-9-f5396847.jpg 830w, /mom-i-and-it-js/assets/rectangle-9@2x-806f9421.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-9.jpg "
@@ -508,7 +508,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-10-676ecb00.jpg 830w, /mom-i-and-it-js/assets/rectangle-10@2x-c9d1ecc4.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-10.jpg "
@@ -517,7 +517,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-11-5810cc52.jpg 830w, /mom-i-and-it-js/assets/rectangle-11@2x-379d8de8.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-11.jpg "
@@ -526,7 +526,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-12-e0576bd7.jpg 834w, /mom-i-and-it-js/assets/rectangle-12@2x-fb79b545.jpg 1668w"
               sizes=" (min-width: 320px) 834px "
               src="./img/desktop/rectangle-12.jpg "
@@ -536,28 +536,10 @@
         </ul>
 
         <!-- Second row -->
-        <ul class="marquee__inner">
+        <ul class="covers-marquee-inner">
           <li>
             <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/first-screen-1.jpg.jpg"
-              alt="StarlightStudio"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-4-37e7b7ff.jpg 834w, /mom-i-and-it-js/assets/rectangle-4@2x-2485cf3c.jpg 1668w"
-              sizes=" (min-width: 320px) 834px "
-              src="./img/desktop/rectangle-4.jpg "
-              alt="a woman playing sports"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-5-3c99fabe.jpg 830w, /mom-i-and-it-js/assets/rectangle-5@2x-4ae4ee3e.jpg 1668w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-5.jpg "
@@ -566,7 +548,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-6-3f7f34d8.jpg 830w, /mom-i-and-it-js/assets/rectangle-6@2x-4f9ede5f.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-6.jpg "
@@ -575,7 +557,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-7-b8ef22f2.jpg 830w, /mom-i-and-it-js/assets/rectangle-7@2x-b7c901f2.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-7.jpg "
@@ -584,7 +566,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-8-cadf2c0c.jpg 830w, /mom-i-and-it-js/assets/rectangle-8@2x-aff37560.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-8.jpg "
@@ -593,7 +575,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-9-f5396847.jpg 830w, /mom-i-and-it-js/assets/rectangle-9@2x-806f9421.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-9.jpg "
@@ -602,7 +584,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-10-676ecb00.jpg 830w, /mom-i-and-it-js/assets/rectangle-10@2x-c9d1ecc4.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-10.jpg "
@@ -611,7 +593,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-11-5810cc52.jpg 830w, /mom-i-and-it-js/assets/rectangle-11@2x-379d8de8.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-11.jpg "
@@ -620,56 +602,29 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-12-e0576bd7.jpg 834w, /mom-i-and-it-js/assets/rectangle-12@2x-fb79b545.jpg 1668w"
               sizes=" (min-width: 320px) 834px "
               src="./img/desktop/rectangle-12.jpg "
               alt="A girl learns English"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/first-screen-1.jpg.jpg"
+              alt="StarlightStudio"
             />
           </li>
         </ul>
 
         <!-- third row -->
-        <ul class="marquee__inner">
+        <ul class="covers-marquee-inner">
           <li>
             <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/first-screen-1.jpg.jpg"
-              alt="StarlightStudio"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-4-37e7b7ff.jpg 834w, /mom-i-and-it-js/assets/rectangle-4@2x-2485cf3c.jpg 1668w"
-              sizes=" (min-width: 320px) 834px "
-              src="./img/desktop/rectangle-4.jpg "
-              alt="a woman playing sports"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-5-3c99fabe.jpg 830w, /mom-i-and-it-js/assets/rectangle-5@2x-4ae4ee3e.jpg 1668w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/desktop/rectangle-5.jpg "
-              alt="fresh harvest box"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-6-3f7f34d8.jpg 830w, /mom-i-and-it-js/assets/rectangle-6@2x-4f9ede5f.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/desktop/rectangle-6.jpg "
-              alt="cosmetics advertising"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-7-b8ef22f2.jpg 830w, /mom-i-and-it-js/assets/rectangle-7@2x-b7c901f2.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-7.jpg "
@@ -678,7 +633,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-8-cadf2c0c.jpg 830w, /mom-i-and-it-js/assets/rectangle-8@2x-aff37560.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-8.jpg "
@@ -687,7 +642,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-9-f5396847.jpg 830w, /mom-i-and-it-js/assets/rectangle-9@2x-806f9421.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-9.jpg "
@@ -696,7 +651,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-10-676ecb00.jpg 830w, /mom-i-and-it-js/assets/rectangle-10@2x-c9d1ecc4.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-10.jpg "
@@ -705,7 +660,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-11-5810cc52.jpg 830w, /mom-i-and-it-js/assets/rectangle-11@2x-379d8de8.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-11.jpg "
@@ -714,82 +669,55 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-12-e0576bd7.jpg 834w, /mom-i-and-it-js/assets/rectangle-12@2x-fb79b545.jpg 1668w"
               sizes=" (min-width: 320px) 834px "
               src="./img/desktop/rectangle-12.jpg "
               alt="A girl learns English"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/first-screen-1.jpg.jpg"
+              alt="StarlightStudio"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-4-37e7b7ff.jpg 834w, /mom-i-and-it-js/assets/rectangle-4@2x-2485cf3c.jpg 1668w"
+              sizes=" (min-width: 320px) 834px "
+              src="./img/desktop/rectangle-4.jpg "
+              alt="a woman playing sports"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-5-3c99fabe.jpg 830w, /mom-i-and-it-js/assets/rectangle-5@2x-4ae4ee3e.jpg 1668w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/desktop/rectangle-5.jpg "
+              alt="fresh harvest box"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-6-3f7f34d8.jpg 830w, /mom-i-and-it-js/assets/rectangle-6@2x-4f9ede5f.jpg 1660w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/desktop/rectangle-6.jpg "
+              alt="cosmetics advertising"
             />
           </li>
         </ul>
         <!-- fourth row -->
-        <ul class="marquee__inner">
+        <ul class="covers-marquee-inner">
           <li>
             <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/first-screen-1.jpg.jpg"
-              alt="StarlightStudio"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-4-37e7b7ff.jpg 834w, /mom-i-and-it-js/assets/rectangle-4@2x-2485cf3c.jpg 1668w"
-              sizes=" (min-width: 320px) 834px "
-              src="./img/desktop/rectangle-4.jpg "
-              alt="a woman playing sports"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-5-3c99fabe.jpg 830w, /mom-i-and-it-js/assets/rectangle-5@2x-4ae4ee3e.jpg 1668w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/desktop/rectangle-5.jpg "
-              alt="fresh harvest box"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-6-3f7f34d8.jpg 830w, /mom-i-and-it-js/assets/rectangle-6@2x-4f9ede5f.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/desktop/rectangle-6.jpg "
-              alt="cosmetics advertising"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-7-b8ef22f2.jpg 830w, /mom-i-and-it-js/assets/rectangle-7@2x-b7c901f2.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/desktop/rectangle-7.jpg "
-              alt="Hotel Mimino"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-8-cadf2c0c.jpg 830w, /mom-i-and-it-js/assets/rectangle-8@2x-aff37560.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/desktop/rectangle-8.jpg "
-              alt="A woman in a Ukrainian shirt"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
-              srcset="/mom-i-and-it-js/assets/rectangle-9-f5396847.jpg 830w, /mom-i-and-it-js/assets/rectangle-9@2x-806f9421.jpg 1660w"
-              sizes=" (min-width: 320px) 830px "
-              src="./img/desktop/rectangle-9.jpg "
-              alt="fruit basket"
-            />
-          </li>
-          <li>
-            <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-10-676ecb00.jpg 830w, /mom-i-and-it-js/assets/rectangle-10@2x-c9d1ecc4.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-10.jpg "
@@ -798,7 +726,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-11-5810cc52.jpg 830w, /mom-i-and-it-js/assets/rectangle-11@2x-379d8de8.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-11.jpg "
@@ -807,19 +735,16 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-12-e0576bd7.jpg 834w, /mom-i-and-it-js/assets/rectangle-12@2x-fb79b545.jpg 1668w"
               sizes=" (min-width: 320px) 834px "
               src="./img/desktop/rectangle-12.jpg "
               alt="A girl learns English"
             />
           </li>
-        </ul>
-        <!-- fifth row -->
-        <ul class="marquee__inner">
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/first-screen-1.jpg.jpg"
@@ -828,7 +753,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-4-37e7b7ff.jpg 834w, /mom-i-and-it-js/assets/rectangle-4@2x-2485cf3c.jpg 1668w"
               sizes=" (min-width: 320px) 834px "
               src="./img/desktop/rectangle-4.jpg "
@@ -837,7 +762,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-5-3c99fabe.jpg 830w, /mom-i-and-it-js/assets/rectangle-5@2x-4ae4ee3e.jpg 1668w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-5.jpg "
@@ -846,7 +771,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-6-3f7f34d8.jpg 830w, /mom-i-and-it-js/assets/rectangle-6@2x-4f9ede5f.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-6.jpg "
@@ -855,7 +780,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-7-b8ef22f2.jpg 830w, /mom-i-and-it-js/assets/rectangle-7@2x-b7c901f2.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-7.jpg "
@@ -864,7 +789,64 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-8-cadf2c0c.jpg 830w, /mom-i-and-it-js/assets/rectangle-8@2x-aff37560.jpg 1660w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/desktop/rectangle-8.jpg "
+              alt="A woman in a Ukrainian shirt"
+            />
+          </li>
+        </ul>
+        <!-- fifth row -->
+        <ul class="covers-marquee-inner">
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/first-screen-1-1e5fb8ac.jpg 830w, /mom-i-and-it-js/assets/first-screen-1@2x-73d6d9f4.jpg 1660w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/first-screen-1.jpg.jpg"
+              alt="StarlightStudio"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-4-37e7b7ff.jpg 834w, /mom-i-and-it-js/assets/rectangle-4@2x-2485cf3c.jpg 1668w"
+              sizes=" (min-width: 320px) 834px "
+              src="./img/desktop/rectangle-4.jpg "
+              alt="a woman playing sports"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-5-3c99fabe.jpg 830w, /mom-i-and-it-js/assets/rectangle-5@2x-4ae4ee3e.jpg 1668w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/desktop/rectangle-5.jpg "
+              alt="fresh harvest box"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-6-3f7f34d8.jpg 830w, /mom-i-and-it-js/assets/rectangle-6@2x-4f9ede5f.jpg 1660w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/desktop/rectangle-6.jpg "
+              alt="cosmetics advertising"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
+              srcset="/mom-i-and-it-js/assets/rectangle-7-b8ef22f2.jpg 830w, /mom-i-and-it-js/assets/rectangle-7@2x-b7c901f2.jpg 1660w"
+              sizes=" (min-width: 320px) 830px "
+              src="./img/desktop/rectangle-7.jpg "
+              alt="Hotel Mimino"
+            />
+          </li>
+          <li>
+            <img
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-8-cadf2c0c.jpg 830w, /mom-i-and-it-js/assets/rectangle-8@2x-aff37560.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-8.jpg "
@@ -873,7 +855,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-9-f5396847.jpg 830w, /mom-i-and-it-js/assets/rectangle-9@2x-806f9421.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-9.jpg "
@@ -882,7 +864,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-10-676ecb00.jpg 830w, /mom-i-and-it-js/assets/rectangle-10@2x-c9d1ecc4.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-10.jpg "
@@ -891,7 +873,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-11-5810cc52.jpg 830w, /mom-i-and-it-js/assets/rectangle-11@2x-379d8de8.jpg 1660w"
               sizes=" (min-width: 320px) 830px "
               src="./img/desktop/rectangle-11.jpg "
@@ -900,7 +882,7 @@
           </li>
           <li>
             <img
-              class="marquee__line"
+              class="covers-marquee-line"
               srcset="/mom-i-and-it-js/assets/rectangle-12-e0576bd7.jpg 834w, /mom-i-and-it-js/assets/rectangle-12@2x-fb79b545.jpg 1668w"
               sizes=" (min-width: 320px) 834px "
               src="./img/desktop/rectangle-12.jpg "
