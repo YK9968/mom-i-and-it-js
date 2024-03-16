@@ -4,11 +4,15 @@ import 'accordion-js/dist/accordion.min.css';
 const accordion = new Accordion('.about-list', {
   duration: 400,
   showMultiple: true,
-  beforeOpen: function (currentElement) {
-    console.log(currentElement);
+  beforeOpen: currentElement => {
+    const arrow = currentElement.querySelector('.about-btn-icon');
+    arrow.style.transition = 'transform 0.5s';
+    arrow.style.transform = 'rotate(180deg)';
   },
-  beforeClose: function (currentElement) {
-    console.log(currentElement);
+  beforeClose: currentElement => {
+    const arrow = currentElement.querySelector('.about-btn-icon');
+    arrow.style.transition = 'transform 0.5s';
+    arrow.style.transform = 'rotate(0deg)';
   },
 });
 

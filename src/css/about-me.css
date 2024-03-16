@@ -29,6 +29,14 @@
   color: var(--main-text);
 }
 
+.about-btn-icon {
+  rotate: 0deg;
+}
+
+.about-open-icon {
+  rotate: 180deg;
+}
+
 .about-list > .ac {
   border: none;
   background-color: transparent;
@@ -85,7 +93,6 @@
   color: var(--main-text);
   padding: 0;
 }
-
 @media screen and (max-width: 767px) {
   .about-main-info {
     margin-bottom: 32px;
@@ -103,6 +110,7 @@
     background: var(--cards);
   }
 }
+
 @media screen and (min-width: 768px) {
   .about-bg-card {
     padding: 64px;
@@ -112,19 +120,20 @@
     background: var(--cards);
   }
 
+  .about-list > .ac {
+    margin-bottom: 32px;
+  }
+
   .about-main-title {
     font-size: 38px;
     line-height: 105%;
   }
 
-  .aboutn-list-item {
-    padding-bottom: 32px;
-    margin-bottom: 32px;
-  }
   .about-item-action {
     margin-bottom: 8px;
   }
-  .about-action-btn {
+
+  .about-list > .ac .ac-trigger {
     padding: 10px;
     width: 40px;
     height: 40px;
@@ -132,6 +141,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .about-list > .ac .about-open-panel {
+    gap: 16px;
+  }
   .about-main-info {
     margin-bottom: 64px;
   }
@@ -143,14 +155,13 @@
     margin-bottom: 16px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .about-list > .ac .ac-panel {
     margin-left: 696px;
+    width: 612px;
   }
-  .about-img {
-    height: 700px;
-    width: 680px;
-  }
+
   .about-main-info {
     flex-direction: row;
     margin-bottom: 96px;
@@ -161,8 +172,5 @@
   }
   .about-bg-card {
     width: 680px;
-  }
-  .about-panel {
-    margin-left: 696px;
   }
 }
