@@ -1,0 +1,123 @@
+.projects-conteiner {
+  background-color: #ffffff;
+  border-radius: 24px 24px 0 0;
+  padding: 32px;
+}
+
+.projects-content {
+  padding-top: 96px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 279px;
+}
+
+.projects-item {
+  color: black;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 18px;
+}
+
+.swiper-slide-text {
+  color: var(--cards);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-align: start;
+}
+.projects-content-btn {
+  color: var(--main-text);
+  margin-top: 32px;
+  border: transparent;
+  background-color: var(--button-color);
+  border-radius: 60px;
+  padding: 13px 32px;
+  width: 141px;
+  height: 45px;
+}
+
+.projects-content-btn:hover,
+.projects-content-btn:focus {
+  background-color: var(--button-hover);
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-item-img {
+  background-color: var(--cards);
+  padding: 100px 16px 100px 16px;
+  border-radius: 0 0 24px 24px;
+}
+
+.projects-img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.projects-swiper-btn {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.projects-swiper-btn button {
+  padding: 20px;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+
+.icon-arrow {
+  stroke: rgba(250, 250, 250, 0.2);
+}
+
+@media screen and (min-width: 767px) {
+  .projects-item-img {
+    padding: 120px 45px 120px 45px;
+    border-radius: 0 0 24px 24px;
+  }
+
+  .projects-conteiner {
+    padding: 64px;
+  }
+
+  .projects-content {
+    padding-top: 164px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .swiper-slide-conteiner {
+    display: flex;
+    justify-content: center;
+  }
+  .projects-conteiner {
+    width: 688px;
+    border-radius: 24px 0 0 24px;
+  }
+
+  .projects-item-img {
+    border-radius: 0 24px 24px 0;
+  }
+
+  .projects-content {
+    padding-top: 265px;
+  }
+}
