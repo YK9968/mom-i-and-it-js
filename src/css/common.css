@@ -6,25 +6,12 @@
 
 @font-face {
   font-family: 'InterTight';
-  src: url(./fonts/InterTight-VariableFont_wght.ttf);
+  src: url(../fonts/InterTight-VariableFont_wght.ttf);
 }
 
 body {
   font-family: 'InterTight', sans-serif;
   background-color: var(--background);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .section-title {
@@ -35,9 +22,6 @@ body {
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.4);
   text-transform: uppercase;
-}
-.hidden {
-  display: none;
 }
 
 .disabled {

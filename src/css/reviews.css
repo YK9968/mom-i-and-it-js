@@ -19,8 +19,6 @@
 .reviews-item-img {
   margin-bottom: 32px;
   border-radius: 10px;
-
-  background-color: aqua;
 }
 
 .reviews-item-title {
@@ -33,7 +31,6 @@
   color: var(--main-text);
 }
 
-/* навіщо "opacity: 0.3;" в тексті першого елементу при розмітці для desktop */
 .reviews-item-discription {
   font-weight: 500;
   font-size: 16px;

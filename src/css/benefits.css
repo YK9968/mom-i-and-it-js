@@ -1,5 +1,4 @@
 .benefits-title {
-  font-family: Inter Tight;
   font-size: 16px;
   font-weight: 600;
   line-height: 24px;
@@ -22,7 +21,6 @@
   border-radius: 20px;
 }
 .benefits-item-title {
-  font: Inter Tight;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -91,10 +89,7 @@
   }
   .benefits-wrap {
     display: flex;
-    /* flex-direction: row; */
     justify-content: space-between;
-    /* align-items: flex-start; */
-    gap: 461px;
   }
   .benefits-list {
     flex-direction: row;
