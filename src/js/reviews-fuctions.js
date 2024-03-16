@@ -17,6 +17,7 @@ async function buildReviews() {
     reviewsSwiper.classList.remove('hidden');
   } catch (error) {
     reviewsList.classList.add('hidden');
+    reviewsSwiper.classList.add('hidden');
     errorNotification.classList.remove('hidden');
 
     iziToast.show({
