@@ -8,15 +8,10 @@
 .about-img {
   border-radius: 24px;
 }
-.aboutn-list-item {
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-}
+
 .about-item-action {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 12px;
 }
 
 .about-main-info {
@@ -34,7 +29,34 @@
   color: var(--main-text);
 }
 
-.about-action-btn {
+.about-btn-icon {
+  rotate: 0deg;
+}
+
+.about-open-icon {
+  rotate: 180deg;
+}
+
+.about-list > .ac {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  padding-bottom: 32px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.about-list > .ac .about-open-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.about-list > .ac .about-close-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about-list > .ac .ac-trigger {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,23 +67,32 @@
   width: 36px;
   height: 36px;
 }
-.about-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--main-text);
-  margin-bottom: 32px;
-}
-.about-short-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: -0.02em;
-  color: var(--main-text);
-  margin-bottom: 10px;
+
+.about-list > .ac .ac-trigger::after {
+  content: '';
 }
 
+.about-list > .ac .ac-panel .ac-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  padding: 0;
+}
+
+.about-list > .ac .ac-panel .ac-text:first-child {
+  margin-top: 12px;
+}
+
+.about-list > .ac .close-panel .ac-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  padding: 0;
+}
 @media screen and (max-width: 767px) {
   .about-main-info {
     margin-bottom: 32px;
@@ -79,6 +110,7 @@
     background: var(--cards);
   }
 }
+
 @media screen and (min-width: 768px) {
   .about-bg-card {
     padding: 64px;
@@ -88,19 +120,20 @@
     background: var(--cards);
   }
 
+  .about-list > .ac {
+    margin-bottom: 32px;
+  }
+
   .about-main-title {
     font-size: 38px;
     line-height: 105%;
   }
 
-  .aboutn-list-item {
-    padding-bottom: 32px;
-    margin-bottom: 32px;
-  }
   .about-item-action {
     margin-bottom: 8px;
   }
-  .about-action-btn {
+
+  .about-list > .ac .ac-trigger {
     padding: 10px;
     width: 40px;
     height: 40px;
@@ -108,6 +141,9 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1439px) {
+  .about-list > .ac .about-open-panel {
+    gap: 16px;
+  }
   .about-main-info {
     margin-bottom: 64px;
   }
@@ -115,22 +151,17 @@
   .about-list {
     margin-bottom: 64px;
   }
-  .about {
-    padding-top: 64px;
-  }
-
   .about-text {
     margin-bottom: 16px;
   }
 }
+
 @media screen and (min-width: 1440px) {
-  .about {
-    padding-top: 96px;
+  .about-list > .ac .ac-panel {
+    margin-left: 696px;
+    width: 612px;
   }
-  .about-img {
-    height: 700px;
-    width: 680px;
-  }
+
   .about-main-info {
     flex-direction: row;
     margin-bottom: 96px;
@@ -141,8 +172,5 @@
   }
   .about-bg-card {
     width: 680px;
-  }
-  .about-panel {
-    margin-left: 696px;
   }
 }
