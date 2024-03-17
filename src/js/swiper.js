@@ -1,7 +1,18 @@
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
-// ===== slider for reviews section =====
+const projectSliderElement = document.querySelector('.project-swiper');
+const projectSliderProps = {
+  navigation: {
+    nextEl: '.project-btn-next',
+    prevEl: '.project-btn-prev',
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+};
+const projectSlider = new Swiper(projectSliderElement, projectSliderProps);
 
 const reviewsSliderElement = document.querySelector('.reviews-swiper');
 const reviewsSliderProps = {
