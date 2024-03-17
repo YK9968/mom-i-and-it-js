@@ -1,5 +1,3 @@
-'use strict';
-
 import axios from 'axios';
 
 const BASE_URL = 'https://portfolio-js.b.goit.study/api';
