@@ -1,5 +1,5 @@
 
-
+// oninput="cuttingInputText()"
 
 const inputComments = document.querySelector('.worktogether-form-comments');
 
