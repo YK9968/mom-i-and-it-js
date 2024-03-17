@@ -8,6 +8,8 @@
 }
 
 .reviews-item {
+  display: flex;
+  flex-direction: column;
   padding: 32px 24px;
   width: 100%;
 
