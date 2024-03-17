@@ -1,14 +1,15 @@
-.reviews-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-
-  margin-bottom: 32px;
-
+.reviews-swiper {
   overflow: hidden;
 }
 
+.reviews-list {
+  display: flex;
+  margin-bottom: 32px;
+}
+
 .reviews-item {
+  display: flex;
+  flex-direction: column;
   padding: 32px 24px;
   width: 100%;
 
@@ -32,33 +33,44 @@
 }
 
 .reviews-item-discription {
+  height: 120px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: var(--minor-text);
+  overflow: auto;
+  scrollbar-color: rgba(250, 250, 250, 0.6) transparent;
+  scrollbar-width: thin;
 }
 
 .reviews-error {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  text-align: center;
+  padding: 32px;
+  border-radius: 24px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
   color: var(--main-text);
+  text-align: center;
+
+  background-color: var(--cards);
 }
 
-.reviews-btn-wrapper {
+.swiper-btn-wrapper {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 12px;
 }
 
-.reviews-btn {
+.swiper-btn {
   border: 1px solid rgba(250, 250, 250, 0.5);
   border-radius: 50%;
-  width: 68px;
-  height: 68px;
+  width: 52px;
+  height: 52px;
 
   background-color: transparent;
 
@@ -67,13 +79,16 @@
   stroke: #fafafa;
 }
 
-.reviews-btn.disabled {
+.swiper-button-disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
 
   stroke: rgba(250, 250, 250, 0.2);
 }
 
-.reviews-btn-icon {
+.swiper-btn-icon {
+  width: 24px;
+  height: 24px;
+
   width: 32px;
   height: 32px;
 
@@ -84,27 +99,34 @@
   transform: translate(-50%, -50%);
 }
 
-.reviews-btn-left {
+.reviews-btn-prev {
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 767px) {
-  .reviews-swiper {
-    gap: 12px;
-  }
-  .reviews-btn {
-    width: 52px;
-    height: 52px;
-  }
-  .reviews-btn-icon {
-    width: 24px;
-    height: 24px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .reviews-item {
     width: calc((100% - 16px) / 2);
+  }
+
+  .reviews-error {
+    padding: 64px;
+
+    font-size: 38px;
+    line-height: 105%;
+  }
+
+  .swiper-btn-wrapper {
+    gap: 20px;
+  }
+
+  .swiper-btn {
+    width: 68px;
+    height: 68px;
+  }
+
+  .swiper-btn-icon {
+    width: 32px;
+    height: 32px;
   }
 }
 

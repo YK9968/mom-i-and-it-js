@@ -6,18 +6,19 @@ import { renderReviewsList } from './render';
 
 const reviewsList = document.querySelector('.reviews-list');
 const errorNotification = document.querySelector('.reviews-error');
-const reviewsSwiper = document.querySelector('.reviews-btn-wrapper');
+const reviewsSwiperBtn = document.querySelector('.reviews-btn-wrapper');
 
-export default buildReviews();
+buildReviews();
 
 async function buildReviews() {
   try {
     const data = await getReviews();
     renderReviewsList(data, reviewsList);
-    reviewsSwiper.classList.remove('hidden');
+    reviewsSwiperBtn.classList.remove('hidden');
   } catch (error) {
     reviewsList.classList.add('hidden');
     reviewsSwiper.classList.add('hidden');
+    reviewsSwiperBtn.classList.add('hidden');
     errorNotification.classList.remove('hidden');
 
     iziToast.show({

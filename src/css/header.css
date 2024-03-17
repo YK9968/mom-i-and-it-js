@@ -1,6 +1,15 @@
+.header-container {
+  position: relative;
+}
+
 .header-section {
   padding-top: 32px;
   padding-bottom: 32px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .header-nav {
