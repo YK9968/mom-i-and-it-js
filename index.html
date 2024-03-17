@@ -7,9 +7,9 @@
     <title>Portfolio</title>
     
     <script type="module" crossorigin src="/mom-i-and-it-js/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/mom-i-and-it-js/assets/vendor-8f98089f.js">
-    <link rel="stylesheet" href="/mom-i-and-it-js/assets/vendor-8255b786.css">
-    <link rel="stylesheet" href="/mom-i-and-it-js/assets/index-2acb30eb.css">
+    <link rel="modulepreload" crossorigin href="/mom-i-and-it-js/assets/vendor-11987e08.js">
+    <link rel="stylesheet" href="/mom-i-and-it-js/assets/vendor-d084a2cf.css">
+    <link rel="stylesheet" href="/mom-i-and-it-js/assets/index-f1c447cf.css">
   </head>
   <body>
     <header><header class="header-section section">
@@ -1031,20 +1031,18 @@
   <div class="container">
     <h2 class="section-title">reviews</h2>
 
-    <ul class="reviews-list"></ul>
+    <div class="reviews-swiper">
+      <ul class="reviews-list swiper-wrapper"></ul>
+    </div>
     <p class="reviews-error hidden">Not Found</p>
-    <div class="reviews-btn-wrapper">
-      <button
-        class="reviews-btn reviews-btn-left disabled"
-        type="button"
-        disabled
-      >
-        <svg class="reviews-btn-icon">
+    <div class="swiper-btn-wrapper reviews-btn-wrapper">
+      <button class="swiper-btn btn-prev" type="button">
+        <svg class="swiper-btn-icon">
           <use href="/mom-i-and-it-js/assets/icons-4bc00d31.svg#icon-arrow-right"></use>
         </svg>
       </button>
-      <button class="reviews-btn reviews-btn-right" type="button">
-        <svg class="reviews-btn-icon">
+      <button class="swiper-btn btn-next" type="button">
+        <svg class="swiper-btn-icon">
           <use href="/mom-i-and-it-js/assets/icons-4bc00d31.svg#icon-arrow-right"></use>
         </svg>
       </button>
