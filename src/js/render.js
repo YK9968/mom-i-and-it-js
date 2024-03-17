@@ -1,5 +1,3 @@
-'use strict';
-
 export function renderReviewsList(array, element) {
   const markUp = array
     .map(({ _id, author, avatar_url, review }) => {

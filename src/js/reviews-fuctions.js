@@ -9,6 +9,7 @@ import getSlider from './swiper';
 const reviewsList = document.querySelector('.reviews-list');
 const errorNotification = document.querySelector('.reviews-error');
 const reviewsSwiperBtn = document.querySelector('.reviews-btn-wrapper');
+const reviewsSwiper = document.querySelector('.reviews-swiper');
 const sliderProps = {
   navigation: {
     nextEl: '.btn-next',
@@ -37,7 +38,7 @@ const sliderProps = {
 };
 
 buildReviews();
-getSlider('.reviews-swiper', sliderProps);
+getSlider(reviewsSwiper, sliderProps);
 
 async function buildReviews() {
   try {
@@ -46,6 +47,7 @@ async function buildReviews() {
     reviewsSwiperBtn.classList.remove('hidden');
   } catch (error) {
     reviewsList.classList.add('hidden');
+    reviewsSwiper.classList.add('hidden');
     reviewsSwiperBtn.classList.add('hidden');
     errorNotification.classList.remove('hidden');
 
