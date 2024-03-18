@@ -1,6 +1,7 @@
 
 import axios from 'axios';
 
+import {openModal} from './modal'
 // ============================== Selectors ==========================
 
 const form = document.querySelector('.worktogether-form');
@@ -13,7 +14,7 @@ const inputText = document.querySelector('.worktogether-form-comments');
 const formButton = document.querySelector('.worktogether-form-button');
 
 // ============================ Success check Email ========================
-console.log(inputEmail);
+
 let textEmail;
 
 function validateEmail(email) {
@@ -65,14 +66,15 @@ function checkSuccessComments(event){
 
 // ============================== Post request ==========================
 
-axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
+axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api2';
 
 async function postRequests(email, comment) {
     await axios.post('/requests', {
         email,
         comment
     })
-    .catch((error) => {
+    .catch((modal) => {
+        openModal(modal);
         console.log(error);
     })
     
@@ -82,14 +84,15 @@ async function postRequests(email, comment) {
 
 formButton.addEventListener('click', disabledForm);
 
-function disabledForm() {
-
-    if( !successEmail.classList.contains('hidden')) {
-        formButton.classList.remove('disabled-button');
-    }
+function disabledForm(event) {
+   
+    // if(!event.successComment.classList.contains('hidden') && 
+    //     !event.successEmail.classList.contains('hidden')) {
+    //     formButton.classList.remove('disabled-button');
+    // }
 
 }
-
+console.log(inputEmail);
 
 
 // ============================ Submit Form ===============================
@@ -108,6 +111,7 @@ function onButtonSubmitForm(event) {
 
     }
     catch(error) {
+        // openModal();
         console.log(error);
     }
     

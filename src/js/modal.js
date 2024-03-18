@@ -5,7 +5,7 @@ const closeModalBtns = document.querySelectorAll('[data-modal-close]');
 const modalBackdrops = document.querySelectorAll('.backdrop');
 const openModalBtnSecond = document.querySelector('.worktogether-form-button');
 
-function openModal(modal) {
+export function openModal(modal) {
   modal.classList.remove('is-hidden');
 }
 
