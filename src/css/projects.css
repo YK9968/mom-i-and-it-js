@@ -98,6 +98,11 @@
   .projects-content {
     margin-top: 164px;
   }
+
+  .projects-content-btn {
+    width: 177px;
+    height: 55px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
