@@ -25,7 +25,6 @@
   display: flex;
   gap: 4px;
 }
-
 .hero-item:not(:last-child) {
   background-color: transparent;
   color: var(--main-text);
@@ -48,7 +47,6 @@
   line-height: auto;
   border: 1px solid var(--minor-text);
   border-radius: 20px;
-  min-width: 178px;
   height: 37px;
   padding: 10px 12px;
   display: flex;

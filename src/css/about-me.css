@@ -101,7 +101,6 @@
 
 .about-swiper-list {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .about-swiper {
@@ -150,7 +149,6 @@
   .about-bg-card {
     padding: 32px;
     border-radius: 24px;
-    width: 343px;
     height: 500px;
     background: var(--cards);
   }
@@ -159,7 +157,6 @@
 @media screen and (min-width: 768px) {
   .about-bg-card {
     padding: 64px;
-    width: 704px;
     height: 700px;
     border-radius: 24px;
     background: var(--cards);
@@ -229,9 +226,6 @@
 
   .about-list {
     margin-bottom: 96px;
-  }
-  .about-bg-card {
-    width: 680px;
   }
 
   .about-swiper-list {
