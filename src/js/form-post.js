@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// import {openModal} from './modal'
-
 import {modalPositive, modalNegative} from './modal';
+
 // ============================== Selectors ==========================
 
 const form = document.querySelector('.worktogether-form');
@@ -16,11 +15,12 @@ const formButton = document.querySelector('.worktogether-form-button');
 
 // ============================ Success check Email ========================
 
+let successfulEm = false;
 let textEmail;
 
 function validateEmail(email) {
-        const example = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-        return example.test(email);
+    const example = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+    return example.test(email);
         
 }
 
@@ -30,11 +30,17 @@ function checkSuccessEmail(event) {
     textEmail = event.currentTarget.value.trim();
     
     if(validateEmail(textEmail)) {
+        successfulEm = true;
+        if(successfulEm && successfulCom) {
+            formButton.classList.remove('disabled-button');
+        }  
         invalidEmail.classList.add('hidden');
         successEmail.classList.remove('hidden');
     } else {
+        successfulEm = false;
         invalidEmail.classList.remove('hidden');
         successEmail.classList.add('hidden');
+        formButton.classList.add('disabled-button');
     }
     
     if (textEmail.length === 0) {
@@ -46,6 +52,7 @@ function checkSuccessEmail(event) {
 // ======================== Success check Text ============================
 
 let textComments;
+let successfulCom = false;
 
 inputText.addEventListener('input', checkSuccessComments);
 
@@ -53,11 +60,17 @@ function checkSuccessComments(event){
     textComments = event.currentTarget.value.trim();
 
     if(textComments.length > 5) {
+        successfulCom = true;
+        if(successfulEm && successfulCom) {
+            formButton.classList.remove('disabled-button');
+        }
         invalidComment.classList.add('hidden');
         successComment.classList.remove('hidden');
     } else {
+        successfulCom = false;
         invalidComment.classList.remove('hidden');
         successComment.classList.add('hidden');
+        formButton.classList.add('disabled-button');
     }
 
     if (textComments.length === 0) {
@@ -65,57 +78,30 @@ function checkSuccessComments(event){
     }
 }
 
-// ============================== Post request ==========================
-
-axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api2';
-
-async function postRequests(email, comment) {
-    await axios.post('/requests', {
-        email,
-        comment
-    })
-    // .catch((error) => {
-    //     modalNegative.classList.remove('is-hidden')
-    //     console.log(error);
-    // })
-    
-}
-
- 
-  
-// ============================ Disabled button =========================
-
-formButton.addEventListener('click', disabledForm);
-
-function disabledForm() {
-   
-    // if(!event.successComment.classList.contains('hidden') && 
-    //     !event.successEmail.classList.contains('hidden')) {
-    //     formButton.classList.remove('disabled-button');
-    // }
-
-}
-console.log(inputEmail);
-
-
-// ============================ Submit Form ===============================
+// =================== Submit Form and Post-request ====================
 
 form.addEventListener('submit', onButtonSubmitForm);
 
-function onButtonSubmitForm(event) {
-    event.preventDefault();
+axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
-    postRequests(textEmail, textComments);
+async function onButtonSubmitForm(evt) {
+    evt.preventDefault();
+
+    const email = inputEmail.value.trim();
+    const comment = inputText.value.trim();
 
     try {
-        
-        
-    console.log("all is ok");
-
+        await axios.post('/requests', {
+        email,
+        comment,
+        });
+        modalPositive.classList.remove('is-hidden');
+        successEmail.classList.add('hidden');
+        successComment.classList.add('hidden');
+    } catch (error) {
+        modalNegative.classList.remove('is-hidden');
+        successEmail.classList.add('hidden');
+        successComment.classList.add('hidden');
     }
-    catch(error) {
-        // modalNegative.classList.remove('is-hidden');
-        console.log(error);
-    }
-    
+    form.reset();
 }
