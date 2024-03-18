@@ -15,59 +15,51 @@
           <span class="worktogether-text-span">work</span>
         </h2>
       </div>
+
       <h2 class="worktogether-title">together</h2>
-
     </div>
-      <form class="worktogether-form">
-        <div class="worktogether-form-wrapper">
-          <input
-            class="worktogether-form-email"
-            type="email"
-            name="email"
-            required
-            placeholder="clients@gmail.com"
-            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-            autocomplete="off"
-          />
-          <p class="worktogether-form-check true hidden" data-action="email">Success !</p>
-          <p class="worktogether-form-check false hidden" data-action="email">
-            Invalid email, try again !!!
-          </p>
-        </div>
 
-        <div class="worktogether-comments-wrapper">
-        <input class="worktogether-form-comments"
-            type="text"
-            name="user-comment"
-            placeholder="comments"
-            required
-           
-        >
-        <p class="worktogether-form-check true hidden" data-action="comment">Success !</p>
-        <p class="worktogether-form-check false hidden" data-action="comment">
-            Invalid !!!
+    <form class="worktogether-form">
+      <div class="worktogether-form-wrapper">
+        <input
+          class="worktogether-form-email"
+          type="email"
+          name="email"
+          required
+          placeholder="clients@gmail.com"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          autocomplete="off"
+        />
+        <p class="worktogether-form-check true hidden">Succes !</p>
+        <p class="worktogether-form-check false hidden">
+          Invalid email, try again !!!
         </p>
-        </div>
-
-        <button class="worktogether-form-button" type="submit">Send</button>
-      </form>
-      <div class="worktogether-address">
-        <ul class="worktogether-address-list">
-          <li class="worktogether-address-item">
-            <a
-              class="worktogether-address-link"
-              href="mailto:lloydjefferson@gmail.com"
-              >lloydjefferson@gmail.com</a
-            >
-          </li>
-          <li class="worktogether-address-item">
-            <a class="worktogether-address-link" href="tel:+3801111111111"
-              >+380 11 1111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
-    
-    
+
+      <input
+        class="worktogether-form-comments"
+        type="text"
+        name="user-comment"
+        placeholder="comments"
+        required
+      />
+      <button class="worktogether-form-button" type="submit">Send</button>
+    </form>
+    <div class="worktogether-address">
+      <ul class="worktogether-address-list">
+        <li class="worktogether-address-item">
+          <a
+            class="worktogether-address-link"
+            href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li class="worktogether-address-item">
+          <a class="worktogether-address-link" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </section>
