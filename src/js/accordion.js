@@ -21,3 +21,24 @@ const aboutAccordion = new Accordion(aboutAccordionEl, aboutAccordionProps);
 aboutAccordion.open(0);
 
 // ------------------------------------------------------------- about accordion
+
+// ------------------------------------------------------------- FAQ accordion
+
+const faqAccordionEl = document.querySelector('.faq-column');
+const faqAccordionProps = {
+  duration: 400,
+  showMultiple: true,
+  beforeOpen: currentElement => {
+    const arrow = currentElement.querySelector('.faq-arrow-img');
+    arrow.style.transition = 'transform 0.5s';
+    arrow.style.transform = 'rotate(180deg)';
+  },
+  beforeClose: currentElement => {
+    const arrow = currentElement.querySelector('.faq-arrow-img');
+    arrow.style.transition = 'transform 0.5s';
+    arrow.style.transform = 'rotate(0deg)';
+  },
+};
+const faqtAccordion = new Accordion(faqAccordionEl, faqAccordionProps);
+
+// ------------------------------------------------------------- /FAQ accordion
