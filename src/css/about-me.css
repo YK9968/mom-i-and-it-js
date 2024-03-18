@@ -129,6 +129,9 @@
 .about-swiper-img {
   stroke: var(--arrow);
 }
+.about-btn-wrapper {
+  display: block;
+}
 .about-swiper-btn {
   display: flex;
   align-items: center;
