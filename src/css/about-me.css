@@ -29,14 +29,6 @@
   color: var(--main-text);
 }
 
-.about-btn-icon {
-  transform: rotate(0deg);
-}
-
-.about-open-icon {
-  transform: rotate(180deg);
-}
-
 .about-list > .ac {
   border: none;
   background-color: transparent;
