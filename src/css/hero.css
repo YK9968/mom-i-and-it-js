@@ -29,7 +29,6 @@
   background-color: transparent;
   color: var(--main-text);
   font-size: 14px;
-  line-height: auto;
   border: 1px solid var(--minor-text);
   border-radius: 50%;
   max-width: 37px;
@@ -44,7 +43,6 @@
   background-color: transparent;
   color: var(--main-text);
   font-size: 14px;
-  line-height: auto;
   border: 1px solid var(--minor-text);
   border-radius: 20px;
   height: 37px;

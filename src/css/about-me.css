@@ -30,11 +30,11 @@
 }
 
 .about-btn-icon {
-  rotate: 0deg;
+  transform: rotate(0deg);
 }
 
 .about-open-icon {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
 .about-list > .ac {

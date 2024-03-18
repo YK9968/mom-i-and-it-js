@@ -42,7 +42,7 @@
 }
 
 .faq-arrow-img {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
 .faq-column > .ac .ac-panel .ac-text {

@@ -7,12 +7,12 @@ const accordion = new Accordion('.about-list', {
   beforeOpen: currentElement => {
     const arrow = currentElement.querySelector('.about-btn-icon');
     arrow.style.transition = 'transform 0.5s';
-    arrow.style.transform = 'rotate(180deg)';
+    arrow.style.transform = 'rotate(0deg)';
   },
   beforeClose: currentElement => {
     const arrow = currentElement.querySelector('.about-btn-icon');
     arrow.style.transition = 'transform 0.5s';
-    arrow.style.transform = 'rotate(0deg)';
+    arrow.style.transform = 'rotate(180deg)';
   },
 });
 
