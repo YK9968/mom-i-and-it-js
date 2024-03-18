@@ -39,14 +39,19 @@
   text-align: start;
 }
 .projects-content-btn {
-  color: var(--main-text);
-  margin-top: 32px;
-  border: transparent;
-  background-color: var(--button-color);
   border-radius: 60px;
+  margin-top: 32px;
   padding: 13px 32px;
   width: 141px;
   height: 45px;
+  display: block;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  background-color: var(--button-color);
+  cursor: pointer;
 }
 
 .projects-content-btn:hover,
@@ -98,6 +103,13 @@
   .projects-content {
     margin-top: 164px;
   }
+
+  .projects-content-btn {
+    margin-top: 38px;
+    padding: 18px 50px;
+    width: 177px;
+    height: 55px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -120,5 +132,9 @@
 
   .projects-content {
     margin-top: 223px;
+  }
+
+  .projects-content-btn {
+    margin-top: 32px;
   }
 }

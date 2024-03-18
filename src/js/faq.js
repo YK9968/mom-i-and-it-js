@@ -10,12 +10,12 @@ function accordeonOpenClose() {
     beforeOpen: currentElement => {
       const arrow = currentElement.querySelector('.faq-arrow-img');
       arrow.style.transition = 'transform 0.5s';
-      arrow.style.transform = 'rotate(180deg)';
+      arrow.style.transform = 'rotate(0deg)';
     },
     beforeClose: currentElement => {
       const arrow = currentElement.querySelector('.faq-arrow-img');
       arrow.style.transition = 'transform 0.5s';
-      arrow.style.transform = 'rotate(0deg)';
+      arrow.style.transform = 'rotate(180deg)';
     },
   });
 }
