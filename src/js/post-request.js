@@ -17,7 +17,7 @@ console.log(inputEmail);
 let textEmail;
 
 function validateEmail(email) {
-        const example = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const example = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
         return example.test(email);
         
 }
@@ -26,8 +26,7 @@ inputEmail.addEventListener('input', checkSuccessEmail);
 
 function checkSuccessEmail(event) {
     textEmail = event.currentTarget.value.trim();
-    // console.log(textEmail);
-
+    
     if(validateEmail(textEmail)) {
         invalidEmail.classList.add('hidden');
         successEmail.classList.remove('hidden');
@@ -85,9 +84,9 @@ formButton.addEventListener('click', disabledForm);
 
 function disabledForm() {
 
-    // if( !successEmail.classList.contains('hidden')) {
-    //     formButton.classList.remove('disabled-button');
-    // }
+    if( !successEmail.classList.contains('hidden')) {
+        formButton.classList.remove('disabled-button');
+    }
 
 }
 
