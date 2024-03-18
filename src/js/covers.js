@@ -13,11 +13,6 @@ function controlsTheAnimation() {
             .getComputedStyle(coversAnimation)
             .getPropertyValue('animation-play-state') === 'paused'
         ) {
-          console.log(
-            window
-              .getComputedStyle(coversAnimation)
-              .getPropertyValue('animation-play-state')
-          );
           coversAnimation.style.animationPlayState = 'running';
         }
       } else {
@@ -26,11 +21,6 @@ function controlsTheAnimation() {
             .getComputedStyle(coversAnimation)
             .getPropertyValue('animation-play-state') === 'running'
         ) {
-          console.log(
-            window
-              .getComputedStyle(coversAnimation)
-              .getPropertyValue('animation-play-state')
-          );
           coversAnimation.style.animationPlayState = 'paused';
         }
       }
