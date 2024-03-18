@@ -119,6 +119,11 @@
     color: var(--main-text);
 }
 
+.disabled-button {
+    background-color: var(--minor-text);
+    pointer-events: none;
+}
+
 .worktogether-form-button:hover {
     background-color: var(--button-hover);
 }
@@ -199,6 +204,7 @@
     width: 245px;
     margin-top: 46px;
     margin-bottom: 0;
+    text-overflow: ellipsis;
 }
 
 .worktogether-form-button {

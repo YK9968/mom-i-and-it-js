@@ -1,46 +1,44 @@
 
-import iziToast from "izitoast";
-import "izitoast/dist/css/iziToast.min.css";
-
 import axios from 'axios';
 
 // ============================== Selectors ==========================
 
 const form = document.querySelector('.worktogether-form');
 const inputEmail = document.querySelector('.worktogether-form-email');
-const success = document.querySelector('.true');
-const invalid = document.querySelector('.false');
+const successEmail = document.querySelector('.true[data-action="email"]');
+const invalidEmail = document.querySelector('.false[data-action="email"]');
+const successComment = document.querySelector('.true[data-action="comment"]');
+const invalidComment = document.querySelector('.false[data-action="comment"]');
 const inputText = document.querySelector('.worktogether-form-comments');
 const formButton = document.querySelector('.worktogether-form-button');
 
 // ============================ Success check Email ========================
-
+console.log(inputEmail);
 let textEmail;
 
+function validateEmail(email) {
+        const example = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return example.test(email);
+        
+}
 
 inputEmail.addEventListener('input', checkSuccessEmail); 
 
 function checkSuccessEmail(event) {
     textEmail = event.currentTarget.value.trim();
-    console.log(textEmail);
-
-    function validateEmail(email) {
-        const example = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return example.test(email);
-        
-    }
+    // console.log(textEmail);
 
     if(validateEmail(textEmail)) {
-        invalid.classList.add('hidden');
-        success.classList.remove('hidden');
+        invalidEmail.classList.add('hidden');
+        successEmail.classList.remove('hidden');
     } else {
-        invalid.classList.remove('hidden');
-        success.classList.add('hidden');
+        invalidEmail.classList.remove('hidden');
+        successEmail.classList.add('hidden');
     }
     
     if (textEmail.length === 0) {
-        invalid.classList.add('hidden');
-        }
+        invalidEmail.classList.add('hidden');
+    }
     
 }
 
@@ -53,18 +51,16 @@ inputText.addEventListener('input', checkSuccessComments);
 function checkSuccessComments(event){
     textComments = event.currentTarget.value.trim();
 
-    if(!textComments.length) {
-        iziToast.error({
-                    
-            titleSize: '16px',
-            message: `Please, enter your comment!!!`,
-            messageColor: '#fff',
-            messageSize: '16px',
-            position: 'topRight',
-            backgroundColor: 'red',
-            close: false,
-            icon: false,
-    })
+    if(textComments.length > 5) {
+        invalidComment.classList.add('hidden');
+        successComment.classList.remove('hidden');
+    } else {
+        invalidComment.classList.remove('hidden');
+        successComment.classList.add('hidden');
+    }
+
+    if (textComments.length === 0) {
+        invalidComment.classList.add('hidden');
     }
 }
 
@@ -82,6 +78,20 @@ async function postRequests(email, comment) {
     })
     
 }
+
+// ============================ Disabled button =========================
+
+formButton.addEventListener('click', disabledForm);
+
+function disabledForm() {
+
+    // if( !successEmail.classList.contains('hidden')) {
+    //     formButton.classList.remove('disabled-button');
+    // }
+
+}
+
+
 
 // ============================ Submit Form ===============================
 

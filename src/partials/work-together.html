@@ -28,15 +28,16 @@
             name="email"
             required
             placeholder="clients@gmail.com"
-            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
             autocomplete="off"
           />
-          <p class="worktogether-form-check true hidden">Success !</p>
-          <p class="worktogether-form-check false hidden">
+          <p class="worktogether-form-check true hidden" data-action="email">Success !</p>
+          <p class="worktogether-form-check false hidden" data-action="email">
             Invalid email, try again !!!
           </p>
         </div>
 
+        <div class="worktogether-comments-wrapper">
         <input class="worktogether-form-comments"
             type="text"
             name="user-comment"
@@ -44,7 +45,13 @@
             required
             
         >
-        <button class="worktogether-form-button" type="submit">Send</button>
+        <p class="worktogether-form-check true hidden" data-action="comment">Success !</p>
+        <p class="worktogether-form-check false hidden" data-action="comment">
+            Invalid !!!
+        </p>
+        </div>
+
+        <button class="worktogether-form-button disabled-button" type="submit">Send</button>
       </form>
       <div class="worktogether-address">
         <ul class="worktogether-address-list">
