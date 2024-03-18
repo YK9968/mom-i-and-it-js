@@ -84,7 +84,7 @@ async function postRequests(email, comment) {
 
 formButton.addEventListener('click', disabledForm);
 
-function disabledForm(event) {
+function disabledForm() {
    
     // if(!event.successComment.classList.contains('hidden') && 
     //     !event.successEmail.classList.contains('hidden')) {
