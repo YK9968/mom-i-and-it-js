@@ -97,6 +97,7 @@
   border-left: none;
   border-right: none;
   border-color: var(--minor-text);
+  text-overflow: ellipsis;
 }
 
 .worktogether-form-comments:hover,
@@ -200,7 +201,7 @@
     width: 245px;
     margin-top: 46px;
     margin-bottom: 0;
-    text-overflow: ellipsis;
+    
   }
 
   .worktogether-form-button {
