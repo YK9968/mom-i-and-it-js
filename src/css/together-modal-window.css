@@ -11,7 +11,7 @@
   /* display: none; */
 }
 
-.modal {
+.modal-positive {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -27,6 +27,23 @@
   /* display: none; */
 }
 
+.modal-negative {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 343px;
+  border: 2px solid var(--button-color);
+  border-radius: 20px;
+  background: var(--cards);
+  /* background: var(--button-color); */
+  padding: 64px 32px 64px 32px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 64px 32px;
+}
+
 .modal-text {
   font-size: 20px;
   font-weight: 600;
@@ -34,6 +51,7 @@
   letter-spacing: -0.02em;
   text-align: left;
   color: var(--main-text);
+  /* color: var(--button-color); */
   margin-bottom: 16px;
   text-align: center;
 }
@@ -64,7 +82,12 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) {
-  .modal {
+  .modal-positive {
+    width: 492px;
+    height: 246px;
+    padding: 64px;
+  }
+  .modal-negative {
     width: 492px;
     height: 246px;
     padding: 64px;
@@ -75,7 +98,6 @@
 }
 /* DESKTOP */
 @media screen and (min-width: 1440px) {
-
   .modal-close-btn {
     cursor: pointer;
   }
