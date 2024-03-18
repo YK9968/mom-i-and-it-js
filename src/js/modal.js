@@ -1,11 +1,11 @@
-const modalPositive = document.querySelector('.modal-positive');
-const modalNegative = document.querySelector('.modal-negative');
+export const modalPositive = document.querySelector('.okey');
+export const modalNegative = document.querySelector('.error');
 const openModalBtnFirst = document.querySelector('.worktogether-form-button');
 const closeModalBtns = document.querySelectorAll('[data-modal-close]');
 const modalBackdrops = document.querySelectorAll('.backdrop');
 const openModalBtnSecond = document.querySelector('.worktogether-form-button');
 
-function openModal(modal) {
+export function openModal(modal) {
   modal.classList.remove('is-hidden');
 }
 
@@ -13,13 +13,13 @@ function closeModal(modal) {
   modal.classList.add('is-hidden');
 }
 
-openModalBtnFirst.addEventListener('click', () => {
-  openModal(modalPositive);
-});
+// openModalBtnFirst.addEventListener('click', () => {
+//   openModal(modalPositive);
+// });
 
-openModalBtnSecond.addEventListener('click', () => {
-  openModal(modalNegative);
-});
+// openModalBtnSecond.addEventListener('click', () => {
+//   openModal(modalNegative);
+// });
 
 closeModalBtns.forEach(button => {
   button.addEventListener('click', () => {
