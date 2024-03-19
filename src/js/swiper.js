@@ -44,51 +44,37 @@ const reviewsSliderProps = {
 
 const reviewsSlider = new Swiper(reviewsSliderElement, reviewsSliderProps);
 
-//*ABOUT*//
-
 const aboutMeElement = document.querySelector('.about-swiper');
+const aboutSliderList = document.querySelector('.about-swiper-list');
+const aboutSliderButton = document.querySelector('.about-swiper-btn');
+function handleAboutSliderButton() {
+  const aboutSliderItem = document.querySelectorAll('.about-swiper-item');
+  const sliderCollection = [];
+  for (const item of aboutSliderItem) {
+    sliderCollection.push(item.textContent.trim());
+  }
+  sliderCollection[6] = sliderCollection[0];
+  const aboutSliderListLastEl = aboutSliderList.lastElementChild;
+  aboutSliderListLastEl.textContent = sliderCollection[6];
+}
 const aboutMeProps = {
-  modules: [Navigation, Keyboard],
+  watchOverflow: false,
+  oneWayMovement: true,
+  rewind: true,
+  speed: 1600,
+  loop: true,
   slidesPerView: 2,
-  watchOverflow: true,
-  speed: 300,
   navigation: {
-    nextEl: '.about-swiper-button-next',
-  },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
+    nextEl: '.about-swiper-btn',
   },
   breakpoints: {
-    320: {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-    },
     768: {
-      slidesPerView: 4,
-      slidesPerGroup: 1,
+      slidesPerView: 3,
     },
     1440: {
       slidesPerView: 6,
-      slidesPerGroup: 1,
     },
   },
 };
-
 const aboutMeSlider = new Swiper(aboutMeElement, aboutMeProps);
-
-const swiperBtn = document.querySelector('.about-swiper-btn');
-
-swiperBtn.addEventListener('click', () => {
-  const activeSlide = document.querySelector('.about-swiper-slide.active');
-  const nextSlide = activeSlide.nextElementSibling;
-
-  if (nextSlide) {
-    activeSlide.classList.remove('active');
-    nextSlide.classList.add('active');
-  } else {
-    const firstSlide = document.querySelector('.swiper-slide');
-    activeSlide.classList.remove('active');
-    firstSlide.classList.add('active');
-  }
-});
+aboutSliderButton.addEventListener('click', handleAboutSliderButton);

@@ -52,6 +52,11 @@
   justify-content: center;
 }
 
+.hero-item:hover,
+.hero-item:focus {
+  border: 1px solid var(--main-text);
+}
+
 @media screen and (min-width: 768px) {
   .hero-bg {
     background-image: url(../img/tablet/hero-tablet.png);
