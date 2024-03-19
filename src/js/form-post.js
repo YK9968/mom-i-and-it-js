@@ -1,6 +1,14 @@
 import axios from 'axios';
 
-import { modalPositive, modalNegative } from './modal';
+import {
+  modalPositive,
+  modalNegative,
+  onNegativeModal,
+  onPositiveModal,
+  showElement,
+  hideElement,
+  disableBtn,
+} from './modal';
 
 // ============================== Selectors ==========================
 
@@ -93,15 +101,17 @@ async function onButtonSubmitForm(evt) {
       email,
       comment,
     });
-    modalPositive.classList.remove('is-hidden');
-    successEmail.classList.add('hidden');
-    successComment.classList.add('hidden');
-    formButton.classList.add('disabled-button');
+    onPositiveModal();
+    showElement(modalPositive);
+    hideElement(successEmail);
+    hideElement(successComment);
+    disableBtn(formButton);
     form.reset();
   } catch (error) {
-    modalNegative.classList.remove('is-hidden');
-    successEmail.classList.add('hidden');
-    successComment.classList.add('hidden');
+    onNegativeModal();
+    showElement(modalNegative);
+    hideElement(successEmail);
+    hideElement(successComment);
   }
   successfulCom = false;
 }
