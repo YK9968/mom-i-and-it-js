@@ -103,5 +103,8 @@ async function onButtonSubmitForm(evt) {
         successEmail.classList.add('hidden');
         successComment.classList.add('hidden');
     }
+    
+    formButton.classList.add('disabled-button');
+    successfulCom = false;
     form.reset();
 }
