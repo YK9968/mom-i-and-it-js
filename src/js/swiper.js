@@ -43,3 +43,38 @@ const reviewsSliderProps = {
 };
 
 const reviewsSlider = new Swiper(reviewsSliderElement, reviewsSliderProps);
+
+const aboutMeElement = document.querySelector('.about-swiper');
+const aboutSliderList = document.querySelector('.about-swiper-list');
+const aboutSliderButton = document.querySelector('.about-swiper-btn');
+function handleAboutSliderButton() {
+  const aboutSliderItem = document.querySelectorAll('.about-swiper-item');
+  const sliderCollection = [];
+  for (const item of aboutSliderItem) {
+    sliderCollection.push(item.textContent.trim());
+  }
+  sliderCollection[6] = sliderCollection[0];
+  const aboutSliderListLastEl = aboutSliderList.lastElementChild;
+  aboutSliderListLastEl.textContent = sliderCollection[6];
+}
+const aboutMeProps = {
+  watchOverflow: false,
+  oneWayMovement: true,
+  rewind: true,
+  speed: 1600,
+  loop: true,
+  slidesPerView: 2,
+  navigation: {
+    nextEl: '.about-swiper-btn',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 6,
+    },
+  },
+};
+const aboutMeSlider = new Swiper(aboutMeElement, aboutMeProps);
+aboutSliderButton.addEventListener('click', handleAboutSliderButton);
