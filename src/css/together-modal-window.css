@@ -1,5 +1,4 @@
-.backdrop,
-.backdrop-error {
+.backdrop {
   position: fixed;
   z-index: 99999999;
   top: 0;

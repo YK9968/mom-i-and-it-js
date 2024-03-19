@@ -53,10 +53,12 @@
   line-height: 19px;
   letter-spacing: -0.02em;
   text-align: center;
+
   color: var(--main-text);
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: 187px;
   height: 55px;
   padding: 18px 36px 18px 36px;
   border-radius: 60px;

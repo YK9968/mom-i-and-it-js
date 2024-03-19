@@ -61,7 +61,7 @@
 }
 
 .about-list > .ac .ac-trigger::after {
-  content: '';
+  content: "";
 }
 
 .about-list > .ac .ac-panel .ac-text {
@@ -86,20 +86,30 @@
   padding: 0;
 }
 
-.active {
+/* ==================================== SWIPER ==================================== */
+
+.swiper-slide-active {
   background-color: var(--button-color);
   border: none;
 }
 
-.about-swiper-list {
+.about-slider-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.container > .swiper {
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container > .swiper-wrapper {
   display: flex;
 }
 
-.about-swiper {
-  display: flex;
-}
-
-.about-swiper-item {
+.about-swiper > .about-swiper-list > .swiper-slide {
   color: var(--main-text);
   font-weight: 500;
   font-size: 16px;
@@ -114,20 +124,27 @@
   height: 130px;
 }
 
-.active {
-  background-color: var(--button-color);
-  border: none;
+.about-btn-wrapper {
+  display: block;
 }
-.about-swiper-img {
+
+.about-slider-wrapper > button {
   stroke: var(--arrow);
-}
-.about-swiper-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
   background-color: transparent;
+  border: none;
+  outline: none;
+  width: 28px;
+  height: 28px;
 }
+
+.about-swiper-img {
+  width: 28px;
+  height: 28px;
+  stroke: var(--arrow);
+  border: none;
+}
+
+/* ==================================== /SWIPER ==================================== */
 
 @media screen and (max-width: 767px) {
   .about-main-info {
@@ -173,16 +190,20 @@
     height: 40px;
   }
 
-  .about-swiper-item {
+  .about-swiper > .about-swiper-list > .swiper-slide {
     width: 200px;
     height: 200px;
     font-size: 20px;
     letter-spacing: -0.02em;
   }
 
-  .about-swiper-list {
-    margin-right: 64px;
+  .about-slider-wrapper > button {
+    width: 40px;
+    height: 40px;
+    gap: 64;
+    padding-right: 32px;
   }
+
   .about-swiper-img {
     width: 40px;
     height: 40px;
@@ -220,7 +241,7 @@
     margin-bottom: 96px;
   }
 
-  .about-swiper-list {
-    margin-right: 72px;
+  .about-slider-wrapper > button {
+    gap: 72px;
   }
 }

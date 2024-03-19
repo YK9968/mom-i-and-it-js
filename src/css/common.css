@@ -14,10 +14,6 @@ body {
   background-color: var(--background);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .section-title {
   margin-bottom: 32px;
   font-weight: 600;

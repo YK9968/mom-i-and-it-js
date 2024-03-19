@@ -1,5 +1,4 @@
 <section class="worktogether section" id="order">
-  <div class="worktogether-bg">
   <div class="container">
     <div class="worktogether-title-wrapper">
       <div class="worktogether-icon-wrapper">
@@ -28,30 +27,23 @@
           name="email"
           required
           placeholder="clients@gmail.com"
-          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           autocomplete="off"
         />
-        <p class="worktogether-form-check true hidden" data-action="email">Success !</p>
-        <p class="worktogether-form-check false hidden" data-action="email">
+        <p class="worktogether-form-check true hidden">Succes !</p>
+        <p class="worktogether-form-check false hidden">
           Invalid email, try again !!!
         </p>
       </div>
 
-      <div class="worktogether-comments-wrapper">
-        <input
+      <input
         class="worktogether-form-comments"
         type="text"
         name="user-comment"
         placeholder="comments"
         required
       />
-      <p class="worktogether-form-check true hidden" data-action="comment">Success !</p>
-      <p class="worktogether-form-check false hidden" data-action="comment">
-          Invalid !!!
-      </p>
-      </div>
-      
-      <button class="worktogether-form-button disabled-button" type="submit">Send</button>
+      <button class="worktogether-form-button" type="submit">Send</button>
     </form>
     <div class="worktogether-address">
       <ul class="worktogether-address-list">
@@ -70,5 +62,4 @@
       </ul>
     </div>
   </div>
-</div>
 </section>
