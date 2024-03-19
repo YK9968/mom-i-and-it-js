@@ -1,7 +1,7 @@
 .header-mob-menu {
   padding: 32px 16px 64px 16px;
   background-color: var(--background);
-  background-image: url('../img/mobile/hero_mobile.png');
+  background-image: url('../img/mobile/hero-mobile.png');
   background-size: cover;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -87,7 +87,7 @@
   screen and (min-resolution: 2dppx) and (min-width: 320px),
   screen and (min-device-pixel-ratio: 2) and (min-width: 320px) {
   .header-menu-background {
-    background-image: url(../img/mobile/hero_mobile@2x.png);
+    background-image: url(../img/mobile/hero-mobile@2x.png);
   }
 }
 
