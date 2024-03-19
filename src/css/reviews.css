@@ -86,8 +86,7 @@
   stroke: #fafafa;
 }
 
-.swiper-btn:hover,
-.swiper-btn:focus {
+.swiper-btn:hover {
   border: 1px solid rgba(250, 250, 250, 0.8);
   stroke: rgba(250, 250, 250, 0.8);
 }
