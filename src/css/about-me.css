@@ -48,6 +48,11 @@
   gap: 10px;
 }
 
+.about-list > .ac .ac-trigger:hover {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  transition: var(--transition-btn);
+}
+
 .about-list > .ac .ac-trigger {
   display: flex;
   align-items: center;
@@ -128,11 +133,17 @@
   width: 28px;
   height: 28px;
 }
+
+.about-swiper-img:hover {
+  stroke: rgb(250, 250, 250, 0.5);
+}
+
 .about-swiper-img {
   width: 28px;
   height: 28px;
   stroke: var(--arrow);
   border: none;
+  transition: border var(--transition-btn);
 }
 /* ==================================== /SWIPER ==================================== */
 @media screen and (max-width: 767px) {
