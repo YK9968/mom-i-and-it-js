@@ -66,9 +66,6 @@
 
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1439px) {
-  .benefits {
-    margin-bottom: 96px;
-  }
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
