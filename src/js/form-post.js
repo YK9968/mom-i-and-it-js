@@ -96,13 +96,12 @@ async function onButtonSubmitForm(evt) {
     modalPositive.classList.remove('is-hidden');
     successEmail.classList.add('hidden');
     successComment.classList.add('hidden');
+    formButton.classList.add('disabled-button');
+    form.reset();
   } catch (error) {
     modalNegative.classList.remove('is-hidden');
     successEmail.classList.add('hidden');
     successComment.classList.add('hidden');
   }
-
-  formButton.classList.add('disabled-button');
   successfulCom = false;
-  form.reset();
 }
