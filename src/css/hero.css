@@ -1,19 +1,17 @@
 .hero-section {
   padding-top: 0;
 }
+
 .hero-title {
   color: var(--main-text);
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 50px;
   line-height: 1;
   padding-top: 281px;
   margin-bottom: 212px;
 }
 
-.hero-link {
-  font-size: 10px;
-}
 .hero-bg {
   position: relative;
   background-image: url(../img/mobile/hero-mobile.png);
@@ -26,46 +24,44 @@
   display: flex;
   gap: 4px;
 }
-.hero-item:not(:last-child) {
+
+.hero-link {
+  font-size: 14px;
   background-color: transparent;
   color: var(--main-text);
-  border: 1px solid var(--minor-text);
+  border: 0.5px solid var(--minor-text);
   border-radius: 50%;
-  max-width: 37px;
   max-height: 37px;
-  padding: 10px 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: var(--transition-btn);
 }
 
-.hero-item:last-child {
-  background-color: transparent;
-  color: var(--main-text);
-  border: 1px solid var(--minor-text);
+.ig {
+  padding: 10px 12px;
+}
+
+.fb {
+  padding: 10px 10.5px;
+}
+
+.yt {
+  padding: 10px 9.5px;
+}
+
+.gh {
+  padding: 10px 8.5px;
+}
+
+.email {
+  padding: 10px 12px;
   border-radius: 20px;
-  height: 37px;
-  padding: 10px 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: var(--transition-btn);
 }
 
-.hero-item:hover,
-.hero-item:focus {
-  border: 1px solid var(--main-text);
-}
-
-@media screen and (min-width: 375px) {
-  .hero-title {
-    font-size: 50px;
-  }
-  .hero-link {
-    padding: 12px;
-    font-size: 14px;
-  }
+.hero-link:hover,
+.hero-link:focus {
+  border: 0.5px solid var(--main-text);
 }
 
 @media screen and (min-width: 768px) {
@@ -85,26 +81,36 @@
     gap: 8px;
   }
 
-  .hero-item:not(:last-child) {
+  .hero-link {
     font-size: 16px;
-    max-width: 55px;
     max-height: 55px;
+  }
+
+  .ig {
     padding: 18px 20px;
   }
 
-  .hero-item:last-child {
-    font-size: 16px;
-    border-radius: 30px;
-    min-width: 223px;
-    height: 55px;
+  .fb {
+    padding: 18px 17.5px;
+  }
+
+  .yt {
+    padding: 18px 17px;
+  }
+
+  .gh {
+    padding: 18px 16px;
+  }
+
+  .email {
     padding: 18px 24px;
+    border-radius: 30px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .hero-bg {
     background-image: url(../img/desktop/hero-desktop.png);
-    background-size: 1440px;
   }
 
   .hero-title {
