@@ -14,7 +14,7 @@
 
 .hero-bg {
   position: relative;
-  background-image: url(../img/mobile/hero-mobile.png);
+  background-image: url(../img/mobile/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 32px;
@@ -124,7 +124,7 @@
   screen and (min-resolution: 2dppx) and (max-width: 767px),
   screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
   .hero-bg {
-    background-image: url(../img/mobile/hero-mobile@2x.png);
+    background-image: url(../img/mobile/hero-mobile@2x.jpg);
   }
 }
 
