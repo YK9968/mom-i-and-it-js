@@ -3,6 +3,7 @@ import 'swiper/css/bundle';
 
 const projectSliderElement = document.querySelector('.project-swiper');
 const projectSliderProps = {
+  speed: 900,
   navigation: {
     nextEl: '.project-btn-next',
     prevEl: '.project-btn-prev',
@@ -16,6 +17,7 @@ const projectSlider = new Swiper(projectSliderElement, projectSliderProps);
 
 const reviewsSliderElement = document.querySelector('.reviews-swiper');
 const reviewsSliderProps = {
+  speed: 900,
   navigation: {
     nextEl: '.reviews-btn-next',
     prevEl: '.reviews-btn-prev',
@@ -61,7 +63,7 @@ const aboutMeProps = {
   watchOverflow: false,
   oneWayMovement: true,
   rewind: true,
-  speed: 1600,
+  speed: 900,
   loop: true,
   slidesPerView: 2,
   navigation: {
