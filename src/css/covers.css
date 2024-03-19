@@ -1,5 +1,4 @@
 .covers-bg {
-  max-width: 375px;
   height: 508px;
   background-image: url(../img/mobile/covers-bg-mobile.png);
   background-size: cover;
@@ -16,6 +15,7 @@
   }
 }
 .covers-content {
+  max-width: none;
   display: flex;
   position: relative;
   align-items: center;
@@ -54,17 +54,16 @@
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(360%);
+    transform: translateX(220%);
   }
 
   to {
-    transform: translateX(-360%);
+    transform: translateX(-220%);
   }
 }
 
 @media screen and (min-width: 768px) {
   .covers-bg {
-    max-width: 768px;
     height: 960px;
     background-image: url(../img/tablet/covers-bg-tablet.png);
   }
@@ -93,8 +92,6 @@
 
 @media screen and (min-width: 1440px) {
   .covers-bg {
-    max-width: 1440px;
-
     background-image: url(../img/desktop/covers-bg-desktop.png);
   }
 
