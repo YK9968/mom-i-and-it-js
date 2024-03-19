@@ -13,14 +13,6 @@ function closeModal(modal) {
   modal.classList.add('is-hidden');
 }
 
-// openModalBtnFirst.addEventListener('click', () => {
-//   openModal(modalPositive);
-// });
-
-// openModalBtnSecond.addEventListener('click', () => {
-//   openModal(modalNegative);
-// });
-
 closeModalBtns.forEach(button => {
   button.addEventListener('click', () => {
     const modal = button.closest('[data-modal]');
