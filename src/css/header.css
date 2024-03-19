@@ -72,6 +72,7 @@
     position: relative;
     display: inline-block;
     text-align: center;
+    height: 39px;
   }
 
   .header-dropbtn {
