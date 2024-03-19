@@ -61,6 +61,7 @@
   padding: 18px 36px 18px 36px;
   border-radius: 60px;
   border: 1px solid #fafafa33;
+  transition: border var(--transition-btn);
 }
 
 /* TABLET */

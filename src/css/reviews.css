@@ -41,8 +41,15 @@
   letter-spacing: -0.02em;
   color: var(--minor-text);
   overflow: auto;
-  scrollbar-color: rgba(250, 250, 250, 0.6) transparent;
-  scrollbar-width: thin;
+}
+
+.reviews-item-discription::-webkit-scrollbar {
+  width: 5px;
+}
+
+.reviews-item-discription::-webkit-scrollbar-thumb {
+  background-color: rgba(250, 250, 250, 0.2);
+  border-radius: 10px;
 }
 
 .reviews-error {
@@ -81,7 +88,6 @@
 
 .swiper-button-disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
-
   stroke: rgba(250, 250, 250, 0.2);
 }
 

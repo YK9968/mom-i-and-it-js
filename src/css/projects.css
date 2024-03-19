@@ -52,6 +52,7 @@
   color: var(--main-text);
   background-color: var(--button-color);
   cursor: pointer;
+  transition: background-color var(--transition-btn);
 }
 
 .projects-content-btn:hover,

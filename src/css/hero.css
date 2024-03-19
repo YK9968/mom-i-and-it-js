@@ -1,23 +1,25 @@
 .hero-section {
   padding-top: 0;
 }
+.hero-title {
+  color: var(--main-text);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  padding-top: 281px;
+  margin-bottom: 212px;
+}
 
+.hero-link {
+  font-size: 10px;
+}
 .hero-bg {
   position: relative;
   background-image: url(../img/mobile/hero-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 32px;
-}
-
-.hero-title {
-  color: var(--main-text);
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 1;
-  padding-top: 281px;
-  margin-bottom: 212px;
 }
 
 .hero-list {
@@ -27,7 +29,6 @@
 .hero-item:not(:last-child) {
   background-color: transparent;
   color: var(--main-text);
-  font-size: 14px;
   border: 1px solid var(--minor-text);
   border-radius: 50%;
   max-width: 37px;
@@ -36,12 +37,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition-btn);
 }
 
 .hero-item:last-child {
   background-color: transparent;
   color: var(--main-text);
-  font-size: 14px;
   border: 1px solid var(--minor-text);
   border-radius: 20px;
   height: 37px;
@@ -49,11 +50,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition-btn);
 }
 
 .hero-item:hover,
 .hero-item:focus {
   border: 1px solid var(--main-text);
+}
+
+@media screen and (min-width: 375px) {
+  .hero-title {
+    font-size: 50px;
+  }
+  .hero-link {
+    padding: 12px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
