@@ -24,12 +24,12 @@ async function loadBg() {
       window.matchMedia &&
       window.matchMedia('(min-resolution: 192dpi)').matches
     ) {
-      backgroundImageURL = '../img/mobile/hero-mobile@2x.png';
+      backgroundImageURL = './img/mobile/hero-mobile@2x.png';
       const backgroundImage = await loadBackgroundImage2x(backgroundImageURL);
       const heroBg = document.querySelector('.hero-bg');
       heroBg.style.backgroundImage = `url('${backgroundImage.src}')`;
     } else {
-      backgroundImageURL = '../img/mobile/hero-mobile.png';
+      backgroundImageURL = './img/mobile/hero-mobile.png';
       const backgroundImage = await loadBackgroundImage1x(backgroundImageURL);
       const heroBg = document.querySelector('.hero-bg');
       heroBg.style.backgroundImage = `url('${backgroundImage.src}')`;
