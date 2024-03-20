@@ -1,3 +1,6 @@
+import bgOneX from '../img/mobile/hero-mobile.png';
+import bgTwoX from '../img/mobile/hero-mobile@2x.png';
+
 async function loadBackgroundImage1x(url) {
   return new Promise((resolve, reject) => {
     const image = new Image();
@@ -24,16 +27,14 @@ async function loadBg() {
       window.matchMedia &&
       window.matchMedia('(min-resolution: 192dpi)').matches
     ) {
-      backgroundImageURL = '/img/mobile/hero-mobile@2x.png';
-      const backgroundImage = await loadBackgroundImage2x(backgroundImageURL);
-      const heroBg = document.querySelector('.hero-bg');
-      heroBg.style.backgroundImage = `url('${backgroundImage.src}')`;
+      backgroundImageURL = bgTwoX; // Використовуємо зображення з високим розширенням
+      await loadBackgroundImage2x(backgroundImageURL);
     } else {
-      backgroundImageURL = '/img/mobile/hero-mobile.png';
-      const backgroundImage = await loadBackgroundImage1x(backgroundImageURL);
-      const heroBg = document.querySelector('.hero-bg');
-      heroBg.style.backgroundImage = `url('${backgroundImage.src}')`;
+      backgroundImageURL = bgOneX; // Використовуємо зображення зі звичайним розширенням
+      await loadBackgroundImage1x(backgroundImageURL);
     }
+    const heroBg = document.querySelector('.hero-bg');
+    heroBg.style.backgroundImage = `url('${backgroundImageURL}')`;
   } catch (error) {
     console.error(error);
   }
