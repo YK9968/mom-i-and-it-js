@@ -95,7 +95,6 @@ async function onButtonSubmitForm(evt) {
 
   const email = inputEmail.value.trim();
   const comment = inputText.value.trim();
-
   try {
     await axios.post('/requests', {
       email,
@@ -114,4 +113,5 @@ async function onButtonSubmitForm(evt) {
     hideElement(successComment);
   }
   successfulCom = false;
+  successfulEm = false;
 }
