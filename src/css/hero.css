@@ -6,7 +6,7 @@
   color: var(--main-text);
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1;
   padding-top: 281px;
   margin-bottom: 212px;
@@ -14,7 +14,6 @@
 
 .hero-bg {
   position: relative;
-  background-image: url(../img/mobile/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 32px;
@@ -22,7 +21,8 @@
 
 .hero-list {
   display: flex;
-  gap: 4px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .hero-link {
@@ -55,13 +55,23 @@
 }
 
 .email {
-  padding: 10px 12px;
-  border-radius: 20px;
+  padding: 10px 10px;
+  border-radius: 60px;
 }
 
 .hero-link:hover,
 .hero-link:focus {
-  border: 0.5px solid var(--main-text);
+  border: 1px solid var(--main-text);
+}
+@media screen and (min-width: 375px) {
+  .hero-list {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 4px;
+  }
+  .hero-title {
+    font-size: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -117,14 +127,6 @@
     padding-left: 162px;
     margin-bottom: 243px;
     min-width: 1084px;
-  }
-}
-
-@media screen and (min-resolution: 192dpi) and (max-width: 767px),
-  screen and (min-resolution: 2dppx) and (max-width: 767px),
-  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
-  .hero-bg {
-    background-image: url(../img/mobile/hero-mobile@2x.jpg);
   }
 }
 
