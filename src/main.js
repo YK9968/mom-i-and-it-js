@@ -4,3 +4,4 @@ import './js/swiper.js';
 import './js/reviews-fuctions.js';
 import './js/covers.js';
 import './js/form-post.js';
+import './js/load-bg.js';
