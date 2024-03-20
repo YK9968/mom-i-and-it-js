@@ -4,6 +4,7 @@ import 'izitoast/dist/css/iziToast.min.css';
 import { getReviews } from './api';
 import { renderReviewsList } from './render';
 
+const reviewsSwiper = document.querySelector('.reviews-swiper');
 const reviewsList = document.querySelector('.reviews-list');
 const errorNotification = document.querySelector('.reviews-error');
 const reviewsSwiperBtn = document.querySelector('.reviews-btn-wrapper');
