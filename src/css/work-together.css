@@ -125,7 +125,7 @@
 }
 
 .disabled-button {
-  background-color: transparent;
+  background-color: var(--background);
   border: 2px solid rgba(250, 250, 250, 0.2);
   pointer-events: none;
 }
