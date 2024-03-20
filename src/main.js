@@ -1,4 +1,3 @@
-import './js/add-bg.js';
 import './js/header-modal-window.js';
 import './js/accordion.js';
 import './js/swiper.js';
