@@ -54,11 +54,11 @@
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(220%);
+    transform: translateX(340%);
   }
 
   to {
-    transform: translateX(-220%);
+    transform: translateX(-340%);
   }
 }
 
